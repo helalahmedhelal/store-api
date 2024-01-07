@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>django</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<ol>
+    {% for product in products %}
+    <li>
+        {{ product.tag}}--{{ product.content_object}}
+    </li>
+    {% endfor %}
+</ol>
+
+{% comment %} <p>{{ product }}</p> {% endcomment %}
+
+</body>
+</html>
